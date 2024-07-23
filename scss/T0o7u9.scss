@@ -1,0 +1,46 @@
+@import "_mixins";
+
+@import "_rating";
+
+@import "_product";
+
+@import "_pdp";
+
+@import "_modal";
+
+@import "_cart";
+
+@import "_extends";
+
+@import "_sidebar";
+
+@import "_recs";
+
+@import "_tickbox";
+
+.inc_overlay {
+  //overflow: hidden !important;
+  min-height: 100vh;
+
+  body {
+    overflow: hidden !important;
+    min-height: 100vh;
+  }
+  .header-secondary-wrapper{
+    z-index: 100;
+  }
+  .product-details-information-content{
+    opacity: 0;
+    display:none;
+  }
+  .inc_af_product-list_block{
+    
+    @include media_query("820", "max") {
+      overflow: visible !important;
+    }
+  }
+}
+
+.inc_bundles {
+  overflow-x: hidden;
+}
